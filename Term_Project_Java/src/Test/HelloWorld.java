@@ -1,5 +1,7 @@
 package Test;
 
+//import Resources.ChooseDestination;
+
 public class HelloWorld {
 
 	public static void main(String[] args) {
@@ -7,6 +9,7 @@ public class HelloWorld {
 		System.out.println("hello world");
 		System.out.println("hello");
 		//hello
+//		new ChooseDestination();
 	}
 
 }
