@@ -4,7 +4,8 @@ import java.awt.*;
 import javax.swing.*;
 
 import Db.DatabaseConnection;
-//import Resources.ChooseDestination;
+import Resources.BusTicketDashboard;
+import Resources.ChooseDestination;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -18,7 +19,7 @@ public class Authentication extends JFrame {
 	private JPasswordField passwordField;
 
 	public Authentication() {
-		setTitle("Login Page");
+		setTitle("Bus Ticket Reservation");
 
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 
@@ -100,7 +101,7 @@ public class Authentication extends JFrame {
 
 				if (authenticate(username, password)) {
 					JOptionPane.showMessageDialog(null, "Login successful!");
-//					new ChooseDestination(username);
+					new BusTicketDashboard().setVisible(true);
 					dispose();
 
 				} else {
