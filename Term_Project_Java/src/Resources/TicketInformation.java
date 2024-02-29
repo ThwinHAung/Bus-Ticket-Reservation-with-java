@@ -187,7 +187,7 @@ public class TicketInformation extends JFrame {
 
 
     private void updateSeatButtons(JPanel seatPanel, int totalSeats) {
-        seatPanel.removeAll(); // Remove all existing seat buttons
+        seatPanel.removeAll(); 
         seatPanel.setLayout(new GridLayout(0, 6));
         Font font = new Font("Arial", Font.PLAIN, 16);
         for (int i = 1; i <= totalSeats; i++) {

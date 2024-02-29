@@ -108,7 +108,7 @@ public class BusTicketDashboard extends JFrame implements ActionListener {
 
     void fetchAndUpdateData() {
         try {
-            // Get the current date as a string in the format yyyy-MM-dd
+
             String currentDate = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
 
             PreparedStatement pstmt = con.prepareStatement(
